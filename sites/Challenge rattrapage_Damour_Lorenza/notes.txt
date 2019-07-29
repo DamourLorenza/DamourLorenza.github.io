@@ -1,0 +1,10 @@
+Police utilisée : 
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+Les images de la bannière principale se trouve dans images/carousel
+Choisissez celle que vous voulez
+
+Je vous ai déjà mis font-awesome pour les icônes
+(https://fortawesome.github.io/Font-Awesome/get-started/)
+
+

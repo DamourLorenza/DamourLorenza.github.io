@@ -1,0 +1,42 @@
+.container hr{
+  width: 300px;
+  margin-left: 0;
+}
+
+hr{
+
+  width: 300px;
+}
+header{
+  color: white;
+  padding-top: 200px;
+  padding-bottom: 300px;
+    background-image: url("images/intro-bg.jpg");
+}
+
+
+
+.gris{
+  background-color: #f8f8f8;
+}
+
+
+section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer{
+  background-image: url("images/banner-bg.jpg");
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+
+}
+
+
+li{
+
+  display: inline;
+
+}

@@ -1,0 +1,640 @@
+i {
+    padding: 5px;
+    color: black;
+}
+
+
+body, html {
+  height: 100%;
+}
+
+.bg{
+  /* The image used */
+  background-image: url("../jessie-frode-602577-unsplash.jpg");
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+    filter: blur(3px) grayscale(61%);
+}
+
+.bg-overlay {
+    background: #17223B;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.t
+{
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  font-size: 80px;
+
+}
+
+.m-auto
+{
+    z-index: 1;
+}
+
+.er.row {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.navbar{
+    background-color: #ff6768!important;
+}
+
+.nav-link i
+{
+  width: 32px;
+  text-align: center;
+  color: #17223b !important;
+}
+
+li.nav-item
+{
+  font-family: 'Lato', sans-serif;
+}
+
+.nav-link
+{
+  color: #17223b !important;
+
+}
+/*souris scroll*/
+
+.scroll-downs {
+
+  margin: auto;
+
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+
+.profil {
+  background-color: #17223b;
+  padding: 50px 0;
+  color: white;
+  line-height: 2;
+}
+
+.titreSection, .titreSection .fas.fa-user-circle
+{
+  color: white;
+  text-align: center;
+}
+
+.titreSection
+{
+  margin-bottom: 50px;
+}
+
+.titreSectionParcours, .titreSectionParcours .fas.fa-graduation-cap
+{
+  color: #27223b;
+  text-align: center;
+}
+
+.titreSectionParcours
+{
+  margin-bottom: 50px;
+}
+
+/*tezttr*/
+
+  /* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro {
+  background: #F45B69;
+  padding: 100px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline {
+  padding: 50px 0;
+}
+
+.timeline ul
+{
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #27223b;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #ff6768;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #ff6768 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #ff6768;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #ff6768;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #FF6768 transparent transparent;
+  }
+}
+
+
+.competences
+{
+  background-image: url(../bg-portfolio.jpg);
+  color: white;
+  padding: 70px 0;
+}
+
+.competences li
+{
+  list-style: none;
+  background-color: #1b7fbd;
+  margin-bottom: 5px;
+  text-align: left;
+  padding: 5px;
+
+}
+
+.competences h2
+{
+  margin-bottom: 50px;
+}
+.competences h3
+{
+  background-color: #6b778d;
+  padding: 10px;
+}
+
+.competences ul
+{
+  padding: 0;
+
+}
+
+.realisations
+{
+  padding: 50px 0;
+}
+
+.realisations h2
+{
+  margin-bottom: 50px;
+}
+
+article.col-md-4
+{
+  margin-bottom: 20px;
+}
+
+
+.tribouton
+{
+  margin-bottom: 50px;
+}
+
+
+/*Oscar*/
+
+figure.effect-oscar {
+	background: -webkit-linear-gradient(-45deg,#ff6768 10%,#17223b 100%);
+	background: linear-gradient(-45deg,#ff6768 10%,#17223b 100%);
+}
+
+figure.effect-oscar img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-oscar figcaption {
+	padding: 3em;
+	-webkit-transition: background-color 0.35s;
+	transition: background-color 0.35s;
+}
+
+figure.effect-oscar figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+}
+
+figure.effect-oscar h2 {
+	margin: 20% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+figure.effect-oscar:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-oscar:hover figcaption {
+	background-color: rgba(58,52,42,0);
+}
+
+figure.effect-oscar:hover img {
+	opacity: 0.1;
+}
+
+
+
+figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+
+figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure figcaption::before,
+figure figcaption::after {
+	pointer-events: none;
+}
+
+figure figcaption, figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*Fin effect */
+.fa-link
+{
+  color: white;
+}
+
+
+
+
+.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+
+.modal-body {
+  position:relative;
+  padding:0px !important;
+}
+
+.close {
+  position:absolute;
+  right:0px;
+  z-index:999;
+  opacity:1 !important;
+  width: 30px;
+  height: 30px;
+}
+
+button.close
+{
+padding: 0;
+background-color: white !important;
+border: 0;
+}
+
+
+.left
+{
+  text-align: left;
+}
+
+.formulaire
+{
+  padding: 50px 0;
+}
+
+.contact
+{
+  background-image: url(../test.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-position: 0 -107px;*/
+  padding: 180px 0;
+  color: white;
+}
+
+.btn-pink
+{
+  background-color: #ff6768;
+}
+
+.btn-pink:hover
+{
+  background-color: #FF4F4B;
+}
+
+footer
+{
+  text-align: center;
+  background-color: #0E0D1C;
+  color: white;
+}
+
+footer p
+{
+  margin: 0;
+  padding: 10px;
+}
+
+.fab.fa-linkedin-in
+{
+  color: white;
+  background-color: #0177B5;
+  border-radius: 10%;
+  padding: 10px 11px;
+  font-size: 18px;
+  margin-left: 6px;
+}
+
+i.far.fa-envelope
+{
+  color: #ff6768;
+  padding-left: 0;
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 25px;
+}
+
+h2 i.fas.fa-user
+{
+  color: white;
+}
+
+h2
+{
+  font-family: 'Permanent Marker', cursive !important;
+}
+
+.color-marine
+{
+  color: #17223b;
+}
+
+h2 i.fas.fa-suitcase-rolling
+{
+  color: white;
+}
+
+h2 i.fas.fa-desktop
+{
+  color: #17223b;
+}
+
+h2 i.fas.fa-envelope
+{
+  color: white;
+}
+
+
+nav.navbar.navbar-expand-lg.navbar.fixed-top.navbar-light
+{
+  padding: 0;
+}
+
+li.nav-item a
+{
+  padding: 10px 0;
+}
+
+li.nav-item a:hover
+{
+  background-color: white;
+}
+
+a.nav-link
+{
+  padding: 20px 10px !important;
+}
+.active
+{
+  background-color: white;
+}
+
+.contact-titre
+{
+  margin-bottom: 40px;
+}
+
+.navbar-brand
+{
+  margin-left: 20px;
+}
+
+.pink
+{
+  background-color: #ff6768!important;
+  border: 1px solid #17223b !important;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.navbar-toggler
+{
+  margin: 10px;
+}
+
+
+@media (max-width: 991px)
+{
+  a.nav-link
+  {
+    border-bottom: 1px solid;
+  }
+}

@@ -1,0 +1,73 @@
+.container-fluid{
+width: 100%;
+}
+
+.image{
+background-image: url("images/intro-bg.jpg");
+height: 720px;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+ }
+
+
+ header nav{
+   background-color: white;
+
+ }
+
+section img{
+  width: 420px;
+  height: 352px;
+}
+
+.image{
+  color: white;
+}
+.un{
+  background-color: #f8f8f8;
+
+}
+
+.trois{
+  background-color: #f8f8f8;
+}
+
+footer{
+  background: url("images/banner-bg.jpg");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  height: 250px;
+  color: white;
+}
+hr{
+  width: 300px;
+}
+
+section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h3{
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.basdepage{
+  background-color: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.bouton{
+  padding: 0;
+  margin-right: 20px;
+}
+
+li{
+
+  display: inline;
+}

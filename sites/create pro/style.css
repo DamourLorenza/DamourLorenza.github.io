@@ -1,0 +1,192 @@
+body {
+background-image: url("images/bg.jpg");
+
+
+
+}
+
+header { background-color: black;
+
+  height: 300px;
+
+  margin-left: 190px;
+  margin-right: 190px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+
+}
+
+.barre{
+  background-color: #e8e8e8;
+
+  height: 60px;
+}
+
+header nav ul
+{text-align: center;
+  list-style: none;
+
+
+}
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+margin: 0 20px;
+
+
+}
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color:white;
+}
+
+header nav ul li a:hover {
+color: #cfa205;
+}
+
+h1{
+  color:#cfa205;
+  text-transform: uppercase;
+  font-size: 83px;
+  text-align: center;
+
+}
+
+
+
+
+.intro {
+  color:#7a7a7a;
+  font-weight: bold;
+
+  height: 90px;
+
+
+
+}
+
+.container .intro p{
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+
+hr {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.st {
+  color: #cfa205;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+
+}
+
+.st li {
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+
+}
+
+
+}
+.im {
+
+  height: 675px;
+  margin-bottom: 80px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.Im{
+  text-align: center;
+}
+.un {
+  text-align: center;
+  display: inline-block;
+  margin-left: 60px;
+
+  height: 195px;
+
+}
+
+.deux {
+  text-align: center;
+  display: inline-block;
+  margin-left: 60px;
+  margin-right: 60px;
+
+  height: 195px;
+
+
+
+}
+.trois {
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 500px;
+  margin-top: 30px;
+
+  height: 195px;
+
+}
+
+}
+h2 {
+  font-size: 18px;
+  font-family:"Josefine Sans"
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+
+
+
+
+
+}
+.container p {
+  font-size: 14px;
+  text-align: left;
+  display: inline-block;
+  width: 260px;
+  height: 480px;
+  color: #7a7a7a;
+
+
+}
+
+.container {
+  margin-left: 190px;
+  margin-right: 190px;
+  background-color: white;
+  height: 883px;
+
+}
+
+.paragraphe {
+  width: 260px;
+  height: 480px;
+ margin-right: 60px;
+ display: inline-block;
+ text-align: center;
+
+}
+section .latest .pdt1{
+  width: 270px;
+  height: 300px;
+}
+
+section .latest{
+  width: 870px;
+  display: inline-block;
+}

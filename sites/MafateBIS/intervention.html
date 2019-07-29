@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Plateform Simplon Reunion </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.css" >
+    <link rel="stylesheet" href="materialize/css/materialize.min.csss" >
+
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+ <div class="container">
+     <h1 >Animer une master class .</h1>
+     <p>Repérez les talents et favorisez le contact direct avec nos apprenants.
+     Nous vous proposons 10 évènements par session pour les rencontrer à l’occasion des
+     master class Simplon Réunion. Une heure de présentation à partir de 16h au sein de nos
+     locaux à Saint­André.
+     Partagez vos expériences et faites connaître vos métiers à nos apprenants pour attirer les
+     meilleurs profils.</p>
+</div>
+<div class="container formulaire">
+           <div  class="input-field col s12">
+             <input  id="first_name" type="text" class="validate">
+             <label for="first_name">NOM</label>
+           </div>
+
+
+             <div class="input-field col s12">
+             <input id="last_name" type="text" class="validate">
+             <label for="last_name">PRENOM</label>
+            </div>
+
+                      <div class="input-field col s12">
+                     <input id="icon_telephone" class="validate" type="tel" pattern="^(0262|0692|0693)\d{6}$" required >
+                     <label for="icon_telephone"><i class="fa fa-phone " aria-hidden="true">Telephone</i></label>
+                    </div>
+
+
+            <div class="input-field col s12">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">SOCIETE / INSTITUTION</label>
+           </div>
+
+
+         <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email" data-error="wrong" data-success="right"> <i class="fa fa-envelope " aria-hidden="true"> Email</i></label>
+        </div>
+
+        <div class="input-field col s12">
+        <input id="last_name" type="text" class="validate">
+        <label for="last_name">SUJET</label>
+       </div>
+
+
+
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea" length="500"></textarea>
+          <label for="textarea1">Message</label>
+        </div>
+
+    <button class="btn waves-effect waves-dark" type="submit" name="action"> Envoyer
+<i class="fa fa-paper-plane" aria-hidden="true"></i>
+     </button>
+
+ </div>
+</form>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="materialize/js/materialize.min.js">
+
+
+
+    </script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    $(document).ready(function() {
+   $('select').material_select();
+ });
+ $(document).ready(function() {
+    $('input#input_text, textarea#textarea1').characterCounter();
+  });
+
+    </script>
+
+</body>
+
+</html>
