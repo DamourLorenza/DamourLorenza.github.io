@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Portfolio|Lorenza Damour</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Shadows+Into+Light&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/18cd9786e2.js"></script>
 
@@ -72,7 +73,7 @@
       <div class="bg-overlay">  </div>
       <div class="er row">
         <div class="m-auto">
-        <h1 class="t">Lorenza<br>Damour<br></h1>
+        <h1 class="t">Lorenza<br>DAMOUR<br></h1>
         <div class="scroll-downs">
           <div class="mousey">
             <div class="scroller"></div>
@@ -96,7 +97,8 @@
           <div class="col-md-9">
             <h3>Bonjour je suis Lorenza Damour,</h3>
             <p>J'ai commencé à m'intéresser au secteur du Digital après avoir effectué une formation
-              de Développeuse Web avec Simplon Réunion. Depuis cela, je cherche à continuer à en apprendre davantage dans ce secteur et élargir mon champ de compétences,
+              de Développeuse Web avec Simplon Réunion. Suite à cet apprentissage, j'ai continué à apprendre davantage dans ce secteur. Je voudrais encore élargir mon champ de compétences,
+              <!--Depuis cela, je cherche à continuer à en apprendre davantage dans ce secteur et élargir mon champ de compétences,
               <!--pour se faire j'ai donc suivi des études en chef de projet digital, dans l'objectif d'être polyvalente pour plus tard avoir les compétences nécessaires pour répondre au mieux aux attentes des futurs clients,-->
               du développement web, en passant par le montage photos et vidéos. <!--biensur e ayant une stratégie efficace --></p>
             </div>
@@ -335,6 +337,9 @@
 <p>Copyright, &copy; 2019,Lorenza Damour</p>
 </footer>
 
+<!-- Paste this code after body tag -->
+<div class="se-pre-con"></div>
+<!-- Ends -->
 
   <script src="jquery-3.4.1.min.js"></script>
   <script src="jquery-3.4.1.js"></script>
@@ -413,7 +418,10 @@ $(document).ready(function(){
         $(this).addClass('active');
 });
 });
-
+$(window).on('load', function() {
+  // Animate loader off screen
+  $(".se-pre-con").fadeOut("slow");;
+});
     </script>
 
     <?php
@@ -449,5 +457,10 @@ $(document).ready(function(){
   //   }
 
      ?>
+
+
   </body>
+
+
+
 </html>
