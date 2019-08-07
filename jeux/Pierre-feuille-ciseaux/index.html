@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+  <center>
+
+    <h1>PIERRE,FEUILLE,CISEAUX</h1>
+  <div id="affichage">
+
+  </div>
+
+  <div id="resultat">
+
+  </div>
+
+
+
+  <div class="joueur">
+    <img id="ciseauxjoueur"src="images/ciseaux.png"onclick="comparer(this.id,choixOrdi)">
+    <img id="feuillejoueur"src="images/feuille.png"onclick="comparer(this.id,choixOrdi)">
+    <img id="pierrejoueur"src="images/pierre.png"onclick="comparer(this.id,choixOrdi)">
+  </div>
+
+  <div class="ordinateur">
+    <img id="ciseaux" src="images/ciseaux.png">
+    <img id="feuille" src="images/feuille.png">
+    <img id="pierre" src="images/pierre.png">
+  </div>
+
+
+
+
+  <input type="button" name="name" value="Commencer"id="start">
+  <input type="button" name="name" value="Recommencer"id="recommencer">
+</center>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript">
+
+  function affichage(){
+    document.getElementById("affichage").innerHTML = "Jouez!";
+  };
+
+
+
+  $(document).ready(function(){
+    $('#recommencer').hide();
+    $('img').hide();
+    $('input').click(function(){
+      temp = 0;
+      $(function(){
+        for (i=3 ;i > -1;i--){
+          setTimeout("$('#affichage').text('"+i+" secondes');",temp);
+          temp+=1000;
+        }
+        $(document).ready(function(){
+          setTimeout("affichage();",temp - 1000);
+        });
+
+      });
+      $(document).ready(function(){
+
+        $('img').hide(0).delay(3000).show(200);
+      });
+
+
+      $('#start').prop('value','Nouvelle partie').click(function(){
+        location.reload();
+      });
+    });
+
+  });
+
+  $('.joueur img').click(function(){
+    $('.joueur img').hide();
+    $(this).show();
+    $('.ordinateur img').hide();
+    $('#'+choixOrdi).show();
+    $('#pointordi').html(0);
+    $('#pointjoueur').html(0);
+
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+  var figure = ["ciseaux","feuille","pierre"];
+  var choixOrdi = aleatoire();
+
+
+  function aleatoire(){
+
+    carteAleatoire = figure[Math.floor(Math.random()*figure.length)];
+
+    return carteAleatoire;
+
+  }
+
+
+
+  function comparer(user,ordi){
+
+    if  ((user==('pierrejoueur')) && (ordi==("feuille"))) {
+      $('#resultat').html('Vous avez perdu!La feuille enveloppe la pierre');
+    }
+
+    else if ((user==('pierrejoueur')) && (ordi==("ciseaux"))) {
+      $('#resultat').html('Vous avez gagné!La pierre casse le ciseaux');
+
+    }
+
+    else if ((user==('feuillejoueur')) && (ordi==("pierre"))){
+      $('#resultat').html('Vous avez gagné!La feuille enveloppe la pierre');
+
+    }
+
+    else if ((user==('feuillejoueur')) && (ordi==("ciseaux"))){
+      $('#resultat').html('Vous avez perdu!Le ciseaux coupe la feuille');
+    }
+
+    else if ((user==('ciseauxjoueur')) && (ordi==("feuille"))){
+      $('#resultat').html('Vous avez gagné!Le ciseaux coupe la feuille');
+    }
+
+    else if ((user==('ciseauxjoueur')) && (ordi==("pierre"))){
+      $('#resultat').html('Vous avez perdu!La pierre casse le ciseaux');
+
+    }
+
+    else if ((user==('pierrejoueur')) && (ordi==("pierre"))) {
+      $('#resultat').html("Egalité!");
+    }
+
+    else if ((user==('ciseauxjoueur'))&& (ordi==("ciseaux"))) {
+      $('#resultat').html("Egalité!");
+    }
+
+    else if ((user==('feuillejoueur'))&& (ordi==("feuille"))) {
+      $('#resultat').html("Egalité!");
+    }
+
+  }
+
+
+
+
+  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <head>
+      <link rel="stylesheet" href="style.css" >
+      <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+
+<h1>Jeux de paires</h1>
+
+
+<script type="text/javascript">
+
+
+cartes=["image1.jpg","image2.jpg","image3.jpg","image4.jpg","image5.jpg","image6.jpg","image1.jpg","image2.jpg","image3.jpg","image4.jpg","image5.jpg","image6.jpg",];
+dos= "dos.jpg";
+
+for(var i=cartes.length-1; i>=1; i--){
+
+	//hasard reçoit un nombre entier aléatoire entre 0 et position
+	var hasard=Math.floor(Math.random()*(i+1));
+
+	//Echange
+	var sauve=cartes[i];
+	cartes[i]=cartes[hasard];
+	cartes[hasard]=sauve;
+
+
+}
+
+
+console.log(cartes);
+
+
+
+
+var tabCompare = [];
+var jeu = [];
+
+
+function comparer (objImg, indice){
+
+
+  objImg.src = cartes[indice];
+  if(tabCompare.length < 2){
+    tabCompare.push(objImg);
+
+  }
+
+  if (tabCompare.length == 2){
+    if(tabCompare[0].src != tabCompare[1].src){
+      setTimeout(function(){
+        tabCompare[0].src = dos;
+        tabCompare[1].src = dos;
+          tabCompare.pop(objImg);
+          tabCompare.pop(objImg);
+
+      }, 1000);
+      }
+      else if (tabCompare[0].src == tabCompare[1].src)
+      {
+        jeu.push(tabCompare);
+        tabCompare.pop(objImg);
+        tabCompare.pop(objImg);
+        console.log(jeu);
+      }
+
+
+}
+if (jeu.length == 6) {
+  alert("Vous avez gagné, cliquer sur nouvelle partie pour rejouer!");
+
+}
+}
+
+
+
+
+function rejoue()
+{
+location.reload();
+}
+
+
+		</script>
+
+
+
+		<center>
+			<img src="dos.jpg" alt="1er carte" height="274" width="184" border="2"onclick="comparer(this,0)"/>
+			<img src="dos.jpg" alt="2er carte" height="274" width="184" border="2"onclick="comparer(this,1)" />
+			<img src="dos.jpg" alt="3er carte" height="274" width="184" border="2"onclick="comparer(this,2)"  />
+			<img src="dos.jpg" alt="4er carte" height="274" width="184" border="2"onclick="comparer(this,3)"  />
+			<br />
+      <img src="dos.jpg" alt="5er carte" height="274" width="184" border="2"onclick="comparer(this,4)"  />
+			<img src="dos.jpg" alt="6er carte" height="274" width="184" border="2"onclick="comparer(this,5)" />
+			<img src="dos.jpg" alt="7er carte" height="274" width="184" border="2"onclick="comparer(this,6)"  />
+			<img src="dos.jpg" alt="8er carte" height="274" width="184" border="2"onclick="comparer(this,7)" />
+			<br />
+      <img src="dos.jpg" alt="9er carte" height="274" width="184" border="2"onclick="comparer(this,8)" />
+      <img src="dos.jpg" alt="10er carte" height="274" width="184" border="2"onclick="comparer(this,9)" />
+			<img src="dos.jpg" alt="11er carte" height="274" width="184" border="2"onclick="comparer(this,10)"/>
+			<img src="dos.jpg" alt="12er carte" height="274" width="184" border="2"onclick="comparer(this,11)"  />
+
+      <br />
+<input type="button" value="NOUVELLE PARTIE" onClick="rejoue()" />
+
+		</center>
+    <script type="text/javascript"src="jquery.js">
+
+    </script>
+    </body>
+  </html>

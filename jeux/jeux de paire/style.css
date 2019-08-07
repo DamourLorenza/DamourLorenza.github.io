@@ -1,0 +1,25 @@
+body{
+  background-image: url("raiponse.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input {
+    width: 200px;
+    height: 105px;
+    background-color: tomato;
+}
+
+h1{
+  text-align: center;
+  font-family: Lobster;
+  font-size: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Lobster;
+    color: #71BDDD;
+    font-size: 100px;
+    text-shadow: 6px 5px black;
+}

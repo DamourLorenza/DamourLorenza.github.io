@@ -1,0 +1,19 @@
+body{
+  background-image: url('font.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  font-family: Montez;
+  font-size: 100px;
+}
+
+#affichage{
+  font-size: 100px;
+}
+
+#resultat{
+  font-size: 50px;
+  font-family: Montez;
+}
