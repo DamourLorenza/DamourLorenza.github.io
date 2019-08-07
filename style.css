@@ -602,7 +602,7 @@ li.nav-item a:hover
 
 a.nav-link
 {
-  padding: 20px 10px !important;
+  padding: 20px 20px 20px 10px !important;
 }
 .active
 {
@@ -641,6 +641,22 @@ button.navbar-toggler
   }
 
   .t{font-size: 60px;}
+  span#brand
+  {
+    position: absolute!important;
+    left: 60px!important;
+    top: 10px;
+  }
+
+}
+
+@media (min-width: 991px)
+{
+
+  span#brand
+  {
+    visibility: hidden;
+  }
 }
 
 .se-pre-con {
@@ -652,3 +668,8 @@ button.navbar-toggler
 	z-index: 9999;
 	background: url(images/lg.ring-loading-gif.gif) center no-repeat #fff;
 }
+
+.navbar-toggler:focus, .navbar-toggler:active {
+   outline: none;
+   box-shadow: none;
+ }

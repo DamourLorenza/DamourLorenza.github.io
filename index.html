@@ -18,7 +18,7 @@
        <!--<a class="navbar-brand order-md-last" href="#">Lorenza Damour</a>-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button><span id="brand" class="navbar-brand"></span>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item acc">
@@ -28,7 +28,7 @@
             <a class="nav-link js-anchor-link" href="#profil"><i class="fas fa-user"></i>Profil</a>
           </li>
           <li class="nav-item te">
-            <a class="nav-link js-anchor-link" href="#timeline"><i class="fas fa-graduation-cap"></i>Parcours</a>
+            <a class="nav-link js-anchor-link" href="#parcours"><i class="fas fa-graduation-cap"></i>Parcours</a>
           </li>
           <li class="nav-item te">
             <a class="nav-link js-anchor-link" href="#competences"><i class="fas fa-suitcase-rolling"></i>Compétences</a>
@@ -111,7 +111,7 @@
         </div>
       </section>
 
-      <section class="timeline" id="timeline">
+      <section class="timeline" id="parcours">
         <h2 class="titreSectionParcours color-marine"><i class="fas fa-graduation-cap"></i> - Mon parcours</h2>
         <ul>
           <li>
@@ -369,7 +369,8 @@
 //         $(this).addClass('active');
 // });
 // });
-
+$('.navbar-brand').html('ACCUEIL');
+$('.acc').addClass('active');
 var sections = $('section')
   , nav = $('nav')
   , nav_height = nav.outerHeight();
@@ -394,7 +395,7 @@ $(window).on('scroll', function () {
     if (s == 0) {
       $('.acc').addClass('active');
       $('a.nav-link.js-anchor-link').removeClass('active');
-
+      $('.navbar-brand').html('ACCUEIL');
     }
 
   });
@@ -421,6 +422,11 @@ $(document).ready(function(){
 $(window).on('load', function() {
   // Animate loader off screen
   $(".se-pre-con").fadeOut("slow");;
+});
+
+// Ferme collapse
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
 });
     </script>
 
