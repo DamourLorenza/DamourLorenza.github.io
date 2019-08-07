@@ -112,7 +112,7 @@ li.nav-item
 
 .profil {
   background-color: #17223b;
-  padding: 50px 0;
+  padding: 100px 0;
   color: white;
   line-height: 2;
 }
@@ -136,7 +136,7 @@ li.nav-item
 
 .titreSectionParcours
 {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 /*tezttr*/
@@ -165,7 +165,7 @@ h1 {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .timeline ul
@@ -307,7 +307,7 @@ time {
 {
   background-image: url(../bg-portfolio.jpg);
   color: white;
-  padding: 70px 0;
+  padding: 100px 0;
 }
 
 .competences li
@@ -338,7 +338,7 @@ time {
 
 .realisations
 {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .realisations h2
