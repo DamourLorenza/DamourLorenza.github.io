@@ -655,7 +655,7 @@ button.navbar-toggler
 
   span#brand
   {
-    visibility: hidden;
+    visibility: hidden!important;
   }
 }
 
