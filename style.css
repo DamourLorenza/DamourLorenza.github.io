@@ -10,7 +10,8 @@ body, html {
 
 .bg{
   /* The image used */
-  background-image: url("../jessie-frode-602577-unsplash.jpg");
+  /* background-image: url("../jessie-frode-602577-unsplash.jpg"); */
+  background-image: url("jp2/accueil.webp");
 
   /* Full height */
   height: 100%;
@@ -305,7 +306,7 @@ time {
 
 .competences
 {
-  background-image: url(../bg-portfolio.jpg);
+  background-image: url(jp2/bg-portfolio.webp);
   color: white;
   padding: 100px 0;
 }
