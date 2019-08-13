@@ -10,8 +10,8 @@ body, html {
 
 .bg{
   /* The image used */
-  /* background-image: url("../jessie-frode-602577-unsplash.jpg"); */
-  background-image: url("jp2/accueil.webp");
+  background-image: url("../jessie-frode-602577-unsplash.jpg");
+  /* background-image: url("jp2/accueil.webp"); */
 
   /* Full height */
   height: 100%;
