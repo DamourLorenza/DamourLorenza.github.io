@@ -10,8 +10,8 @@ body, html {
 
 .bg{
   /* The image used */
-  background-image: url("../jessie-frode-602577-unsplash.jpg");
-  /* background-image: url(../test.jpg);); */
+  /* background-image: url("../jessie-frode-602577-unsplash.jpg"); */
+  background-image: url("jessie.jpg");
 
   /* Full height */
   height: 100%;
