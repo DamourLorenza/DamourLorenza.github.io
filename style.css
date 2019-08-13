@@ -648,7 +648,7 @@ button.navbar-toggler
     left: 60px!important;
     top: 10px;
   }
-
+.bg{background-attachment: initial;}
 }
 
 @media (min-width: 991px)
