@@ -11,7 +11,7 @@ body, html {
 .bg{
   /* The image used */
   /* background-image: url("../jessie-frode-602577-unsplash.jpg"); */
-  background-image: url("acc2.jpg");
+  background-image: url(../test.jpg););
 
   /* Full height */
   height: 100%;
